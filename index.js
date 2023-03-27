@@ -1,9 +1,25 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  const arrayOfLetters = word.split('');
+  const reverseLetters = arrayOfLetters.reverse()
+  const reverseString  = reverseLetters.join('')
+
+  if (word == reverseString){
+
+    return true
+
+  } else {
+    return false
+  }
+
 }
+  // Write your algorithm here
+  // This function is meant to take a string as palindrome that will 
+  // return true if it is, and false if it not a palindrome. 
+
 
 /* 
   Add your pseudocode here
+  Iterate through the string to remove any other values(non-alphanumeric).
 */
 
 /*
